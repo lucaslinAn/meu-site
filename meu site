@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meu portifólio</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+  flex-wrap: wrap;
+/*   background-color: #13171a; */
+}
+
+.banner img {
+  width: 300px;
+  
+}
+
+.texto {
+  max-width: 400px;
+  text-align: left;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: #ddd;
+}
+
+.links a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.assinatura {
+  font-size: 0.8em;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0px;
+    background-color: #999;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .nav-links li{ 
+    padding: 30px;
+    border-bottom: 1px solid #2222;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .texto {
+    text-align: center;
+  }
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        Lucas Linardo Angelini
+    </div>
+</header>
+    <nav>
+        <ul>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        <img src="pokedex.png" alt="Imagem escolhida pelo aluno">
+        <div class="texto">
+            <h1>Meu Site</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, veritatis aliquid nam soluta qui ipsa aliquam. Facere cumque nihil sed quisquam autem nisi. Atque expedita explicabo dignissimos accusamus repellat beatae!</p>
+        </div>
+    </section>
+    
+    <section class="links" id="links">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </section>
+    
+    <footer>
+        <p>desenvolvido por Lucas Linardo</p>
+        <p class="assinatura">Feito por Lucas Linardo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
