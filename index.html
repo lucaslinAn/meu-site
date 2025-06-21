@@ -1,174 +1,423 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Meu portifólio</title>
-    <style>
-        * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  text-align: center;
-  background: linear-gradient(to bottom, #6ab7f5, #fff);
-  min-height: 100vh;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background-color: #333;
-  color: white;
-}
-
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 2em;
-  cursor: pointer;
-}
-
-.banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  gap: 20px;
-  flex-wrap: wrap;
-/*   background-color: #13171a; */
-}
-
-.banner img {
-  width: 300px;
-  
-}
-
-.texto {
-  max-width: 400px;
-  text-align: left;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background: #ddd;
-}
-
-.links a {
-  text-decoration: none;
-  color: #333;
-  padding: 10px 20px;
-  background: white;
-  border-radius: 5px;
-}
-
-footer {
-  background: #222;
-  color: white;
-  padding: 20px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.assinatura {
-  font-size: 0.8em;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 0px;
-    background-color: #999;
-    position: absolute;
-    left: 0;
-    width: 100vw;
-    text-align: center;
-    margin-top: 10px;
-  }
-  .nav-links li{ 
-    padding: 30px;
-    border-bottom: 1px solid #2222;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .hero {
-    flex-direction: column;
-  }
-  .texto {
-    text-align: center;
-  }
-}
-    </style>
+	<title>Dimension by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
-<body>
 
-<header>
-    <div class="logo">
-        Lucas Linardo Angelini
-    </div>
-</header>
-    <nav>
-        <ul>
-            <ul class="nav-links">
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-            <div class="menu-toggle">☰</div>
-        </nav>
-    </header>
-    
-    <section class="banner">
-        <div class="texto">
-            <h1>Olá Bem-Vindo!</h1>
-            <p>Olá meu nome é Lucas e este é o meu site Bem-Vindo aqui tem alguns projetos!</p>
-        </div>
-    </section>
-    
-    <section class="links" id="links">
-        <a href="util.html">projeto 1</a>
-        <a href="poke.html">projeto 2</a>
-        <a href="lista.html">projeto 3</a>
-        <a href="index.html">projeto 4</a>
-    </section>
-    
-    <footer>
-        <p>Desenvolvido por Lucas Linardo</p>
-        <p class="assinatura">Feito por Lucas Linardo</p>
-    </footer>
+<body class="is-preload">
 
-    <script src="script.js"></script>
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<img src="/images/ball.svg" class="basketball">
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Basketball</h1>
+					<p>Basketball é um jogo de equipe jogado entre dois times de cinco jogadores cada, onde o objetivo é
+						marcar pontos arremessando uma bola através de um aro elevado. O jogo é popular em todo o mundo
+						e é conhecido por sua dinâmica rápida, habilidades atléticas e estratégias de equipe.</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">streetball</a></li>
+					<li><a href="#about">Sobre</a></li>
+					<!--<li><a href="#elements">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">streetball</h2>
+				<span class="image main"><img src="/images/historia-do-streetball.jpg" alt="" /></span>
+				<p>Basquete de Rua: Muito Mais que um Jogo
+
+				<p>O basquete de rua, também conhecido como streetball, é mais do que uma simples variação do basquete
+					tradicional — é uma forma de expressão cultural, resistência e criatividade. Surgido nos bairros
+					periféricos das grandes cidades, especialmente nos Estados Unidos, o streetball rapidamente
+					conquistou espaços ao redor do mundo, inclusive nas quadras abertas e asfaltadas do Brasil.</p>
+
+				<p>Diferente do basquete formal, com regras rígidas e partidas organizadas por federações, o basquete de
+					rua é marcado pela liberdade. As regras são flexíveis, os times são formados na hora e o jogo
+					valoriza a habilidade individual, o improviso e o estilo. Dribles desconcertantes, enterradas
+					impressionantes e jogadas cheias de personalidade são a alma do jogo.</p>
+
+				<p>Além do esporte, o streetball é um movimento social e cultural. As quadras viram palco para música,
+					arte urbana e encontros de diferentes tribos. O hip-hop, o grafite e o estilo das roupas estão
+					presentes, reforçando o clima de autenticidade e identidade do jogo.</p>
+
+				<p>No Brasil, o basquete de rua ganhou força principalmente em São Paulo e no Rio de Janeiro, com
+					campeonatos independentes, projetos sociais e coletivos que usam o esporte como ferramenta de
+					transformação. Para muitos jovens, o streetball representa oportunidade, lazer e voz.</p>
+
+				<p>No fim das contas, o basquete de rua vai além das cestas: é sobre atitude, comunidade e paixão pela
+					bola. <a href="#work">awesome work</a>.</p>
+			</article>
+			<!-- Work -->
+			<article id="work">
+				<h2 class="major">Work</h2>
+				<span class="image main"><img src="/images/arremesso-basquete-transforma-sc-ge (1).webp" alt="" /></span>
+				<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet
+					ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer
+					sollicitudin mauris nec lorem luctus ultrices.</p>
+				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
+					magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
+					Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
+					consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
+					amet feugiat tempus.</p>
+			</article>
+
+			<!-- About -->
+			<article id="about">
+				<h2 class="major">Sobre</h2>
+				<span class="image main"><img src="images/arremesso-basquete-transforma-sc-ge (1).webp" alt="" /></span>
+				<p>Basquete: Um Esporte de Velocidade, Técnica e Trabalho em Equipe</p>
+
+				<p>O basquete, ou basketball, é um dos esportes mais populares do mundo, conhecido por sua
+					velocidade, intensidade e pela habilidade exigida dos jogadores. Criado em 1891 por James
+					Naismith, um professor canadense que buscava uma atividade física para o inverno nos Estados
+					Unidos, o basquete cresceu rapidamente e hoje é praticado em praticamente todos os continentes.
+				</p>
+
+				<p>O jogo é disputado por duas equipes com cinco jogadores cada, que têm como objetivo principal
+					fazer o maior número de pontos ao arremessar a bola dentro da cesta do time adversário. Cada
+					partida é marcada por movimentações rápidas, jogadas estratégicas e muita emoção. Além da
+					técnica com a bola, o esporte exige preparo físico, visão de jogo, disciplina e, principalmente,
+					trabalho em equipe.</p>
+
+				<p>Ao longo dos anos, o basquete se transformou em um verdadeiro espetáculo. A NBA, liga
+					profissional dos Estados Unidos, é referência mundial e revelou lendas como Michael Jordan, Kobe
+					Bryant, LeBron James e muitos outros. No Brasil, o esporte também tem história, com nomes como
+					Oscar Schmidt e Hortência, que ajudaram a popularizar o basquete no país.</p>
+
+				<p>Mais do que um jogo, o basquete é uma ferramenta de inclusão social, educação e inspiração. Em
+					quadras escolares, praças públicas ou grandes arenas, ele ensina valores como respeito,
+					superação e união. Para muitos, o basquete é um estilo de vida.</p>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="primary" /></li>
+						<li><input type="reset" value="Reset" /></li>
+					</ul>
+				</form>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</article>
+
+			<!-- Elements -->
+			<article id="elements">
+				<h2 class="major">Elements</h2>
+
+				<section>
+					<h3 class="major">Text</h3>
+					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+						<em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
+							href="#">this
+							is a link</a>.
+					</p>
+					<hr />
+					<h2>Heading Level 2</h2>
+					<h3>Heading Level 3</h3>
+					<h4>Heading Level 4</h4>
+					<h5>Heading Level 5</h5>
+					<h6>Heading Level 6</h6>
+					<hr />
+					<h4>Blockquote</h4>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget
+						tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
+						felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in
+						faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					<h4>Preformatted</h4>
+					<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+				</section>
+
+				<section>
+					<h3 class="major">Lists</h3>
+
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+						</li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value=""
+									placeholder="jane@untitled.tld" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
+
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
