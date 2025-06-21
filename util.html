@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio ao vivo</title>
+</head>
+<style>/* From Uiverse.io by Jedi-hongbin */ 
+button {
+ display: flex;
+ height: 3em;
+ width: 100px;
+ align-items: center;
+ justify-content: center;
+ background-color: #eeeeee4b;
+ border-radius: 3px;
+ letter-spacing: 1px;
+ transition: all 0.2s linear;
+ cursor: pointer;
+ border: none;
+ background: #fff;
+}
+
+button > svg {
+ margin-right: 5px;
+ margin-left: 5px;
+ font-size: 20px;
+ transition: all 0.4s ease-in;
+}
+
+button:hover > svg {
+ font-size: 1.2em;
+ transform: translateX(-5px);
+}
+
+button:hover {
+ box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+ transform: translateY(-2px);
+}</style>
+<body>
+    <div class="loader"></div>
+    <h2>Relógio Ao vivo - Portugal</h2>
+    <div class="relogio" id="relogio">00:00:00</div>
+    <script src="util.js"></script>
+    <style src="util.css"></style>
+    
+    <h1>Calcular dias</h1>
+
+<form name="form_main">
+  <label for="date_ini">Date Inicial: </label> 
+  <input name="date_ini" id="date_ini" type="date"> <br>
+  <label for="date_end">Date Final: </label> 
+  <input name="date_end" id="date_end" type="date"> <br>
+
+  <label for="days">Dias passados: </label> 
+  <span id="days"></span> <br>
+
+  <button type="button" onclick="countDays()">Contar</button>
+</form>
+</body>
+</html>
